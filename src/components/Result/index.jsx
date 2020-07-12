@@ -40,14 +40,28 @@ const GaugeView = (grades) => {
           .map((value, index) => {
             if (value > 0) {
               const percent = (value * 100) / nbVotes;
-              const width = index === 0 ? "auto" : (percent + "%")
+              const width = percent + "%"
               return (
                 <td
                 key={index}
                 className={ CONSTANTS.grades[index].color + ' result' }
                 style={{ width: width }}
-                >
-                { Math.round(10*percent)/10 }%
+                >&nbsp;
+                {
+                  percent <= 3.8 ?
+                  <span className='outgauge' style={{
+                    left: percent/2 + "%",
+                    top: index % 2 == 0 ? "-20px" : "25px",
+                    position: "absolute",
+                    fontSize: "0.7em",
+                  }}>
+                    { Math.round(10*percent)/10 }%
+                  </span>
+                  :
+                  <span>
+                    { Math.round(10*percent)/10 }%
+                  </span>
+                }
                 </td>
               );
             } else {

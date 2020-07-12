@@ -51,8 +51,8 @@ const LandingPage = () => (
       <Grid container stackable>
         <Grid.Row>
           <Grid.Column width={16}>
-            <Header>Produire et Travailler</Header>
-            <Result results={ gradesProduire } />
+            <Header>Se Déplacer</Header>
+            <Result results={ gradesSeDeplacer } />
           </Grid.Column>
         </Grid.Row>
       </Grid>
