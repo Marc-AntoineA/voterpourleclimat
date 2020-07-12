@@ -1,0 +1,53 @@
+
+td.result {
+  text-align: center;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+td.green { /*excellent */
+  background-color: rgb(1, 152, 18);
+}
+
+td.olive { /* Bien */
+  background-color: rgb(107, 202, 36);
+}
+
+td.yellow { /* Passable */
+  background-color: rgb(255, 178, 0);
+}
+
+td.orange { /* Mauvais */
+  background-color: rgb(255, 93, 0);
+}
+
+td.red { /* À rejeter */
+  background-color: rgb(178, 6, 22);
+}
+
+.badge {
+	padding: 6px;
+	color: white;
+	font-size: 0.8em;
+	margin: 4px;
+	border-radius: 6px;
+}
+
+.median {
+	height: 40px;
+	border-right: 2px dashed gray;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	bottom: 30px;
+}
+
+.median-label {
+	position: absolute;
+	left: 49%;
+	bottom: 9px;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: gray;
+}
